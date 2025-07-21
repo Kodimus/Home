@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodimus - Soluções Tecnológicas Inovadoras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body data-theme="dark">
+    <!-- Pré-carregador -->
+    <div class="preloader" id="preloader">
+        <div class="logo-container">
+            <img src="Kodimus.png" alt="Kodimus">
+            <div class="loading-text">Carregando...</div>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="Kodimus.png" alt="Kodimus">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Processo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                
+                <button class="theme-toggle ms-3" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção principal -->
+    <section id="home" class="principal">
+        <div class="particles-container" id="particles"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="principal-content">
+                        <h1 class="principal-title">
+                            <span class="typing-effect" id="typingText"></span>
+                        </h1>
+                        <p class="principal-subtitle">Transformamos ideias em soluções tecnológicas inovadoras que impulsionam o crescimento do seu negócio</p>
+                        <a href="#contact" class="cta-button">
+                            Vamos Conversar
+                            <i class="fas fa-rocket ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Sobre a Kodimus</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="about-card fade-in">
+                        <p class="lead">Na Kodimus, somos apaixonados por tecnologia e inovação. Nossa missão é transformar ideias complexas em soluções digitais elegantes e eficientes.</p>
+                        <p>Com uma equipe de desenvolvedores experientes e designers criativos, criamos experiências digitais que não apenas atendem às necessidades dos nossos clientes, mas também superam suas expectativas.</p>
+                        <div class="row mt-4">
+                            <div class="col-md-4 text-center">
+                                <div class="micro-interaction">
+                                    <i class="fas fa-code service-icon"></i>
+                                    <h5>Código Limpo</h5>
+                                    <p>Desenvolvimento com as melhores práticas</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="micro-interaction">
+                                    <i class="fas fa-rocket service-icon"></i>
+                                    <h5>Performance</h5>
+                                    <p>Soluções rápidas e otimizadas</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="micro-interaction">
+                                    <i class="fas fa-heart service-icon"></i>
+                                    <h5>Paixão</h5>
+                                    <p>Amor pelo que fazemos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Processo -->
+    <section id="process" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Nosso Processo</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>1. Descoberta</h4>
+                        <p>Entendemos profundamente suas necessidades, objetivos e desafios para criar a solução perfeita.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>2. Planejamento</h4>
+                        <p>Criamos um roadmap detalhado com cronogramas, recursos e marcos bem definidos.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>3. Design</h4>
+                        <p>Desenvolvemos interfaces intuitivas e experiências de usuário memoráveis.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>4. Desenvolvimento</h4>
+                        <p>Codificamos sua solução com as melhores práticas e tecnologias modernas.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>5. Lançamento</h4>
+                        <p>Implementamos e monitoramos sua solução para garantir o sucesso do projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Projetos em Destaque</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>App Mobile Inovador</h4>
+                        <p>Desenvolvimento de aplicativo mobile com interface moderna e funcionalidades avançadas.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-2">React Native</span>
+                            <span class="badge bg-secondary me-2">Node.js</span>
+                            <span class="badge bg-success">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Plataforma Web</h4>
+                        <p>Sistema web completo com dashboard administrativo e área do cliente.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-2">Vue.js</span>
+                            <span class="badge bg-secondary me-2">Laravel</span>
+                            <span class="badge bg-success">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Sistema de Analytics</h4>
+                        <p>Plataforma de análise de dados com visualizações interativas e relatórios avançados.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-2">React</span>
+                            <span class="badge bg-secondary me-2">Python</span>
+                            <span class="badge bg-success">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Desenvolvimento Web</h4>
+                    <p>Criamos websites e aplicações web modernas, responsivas e otimizadas para conversão.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Apps Mobile</h4>
+                    <p>Desenvolvimento de aplicativos nativos e híbridos para iOS e Android com excelente UX.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Backend & APIs</h4>
+                    <p>Arquiteturas robustas, APIs RESTful e integração com sistemas existentes.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4>Cloud Solutions</h4>
+                    <p>Migração para nuvem, DevOps e soluções escaláveis na AWS, Azure e Google Cloud.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Analytics & BI</h4>
+                    <p>Dashboards interativos, análise de dados e business intelligence para tomada de decisões.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Segurança Digital</h4>
+                    <p>Auditorias de segurança, implementação de protocolos e proteção de dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form fade-in">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactName" class="form-label visually-hidden">Seu Nome</label>
+                                    <input type="text" id="contactName" name="name" class="form-control" placeholder="Seu Nome" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactEmail" class="form-label visually-hidden">Seu Email</label>
+                                    <input type="email" id="contactEmail" name="email" class="form-control" placeholder="Seu Email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactCompany" class="form-label visually-hidden">Empresa</label>
+                                    <input type="text" id="contactCompany" name="company" class="form-control" placeholder="Empresa">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactPhone" class="form-label visually-hidden">Telefone</label>
+                                    <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="Telefone">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <label for="contactService" class="form-label visually-hidden">Selecione o Serviço</label>
+                                    <select id="contactService" name="service" class="form-control" required>
+                                        <option value="" disabled selected>Selecione o Serviço de Interesse</option>
+                                        <option value="web">Desenvolvimento Web</option>
+                                        <option value="mobile">App Mobile</option>
+                                        <option value="backend">Backend & APIs</option>
+                                        <option value="cloud">Cloud Solutions</option>
+                                        <option value="analytics">Analytics & BI</option>
+                                        <option value="security">Segurança Digital</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <label for="contactMessage" class="form-label visually-hidden">Sua Mensagem</label>
+                                    <textarea id="contactMessage" name="message" class="form-control" rows="5" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="cta-button">
+                                    Enviar Mensagem
+                                    <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 text-center fade-in">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Localização</h5>
+                        <p>Russas, CE<br>Brasil</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center fade-in">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p>contato@kodimus.com<br>comercial@kodimus.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center fade-in">
+                    <a href="https://wa.me/556299003483" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h5>WhatsApp</h5>
+                            <p>+55 62 99003-483</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Kodimus. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="#" class="micro-interaction"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="micro-interaction"><i class="fab fa-github"></i></a>
+                        <a href="#" class="micro-interaction"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="micro-interaction"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="landing.js"></script>
+</body>
+</html>
