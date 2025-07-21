@@ -116,26 +116,28 @@ window.addEventListener('scroll', () => {
 // Formulário de Contato
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    // Simular envio do formulário
-    const button = this.querySelector('button[type="submit"]');
-    const originalText = button.innerHTML;
-    
-    button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-    button.disabled = true;
-    
-    setTimeout(() => {
-        button.innerHTML = '<i class="fas fa-check"></i> Enviado!';
-        button.style.background = '#28a745';
-        
-        setTimeout(() => {
-            button.innerHTML = originalText;
-            button.disabled = false;
-            button.style.background = '';
-            this.reset();
-        }, 3000);
-    }, 2000);
+
+    const name = document.getElementById('contactName').value;
+    const email = document.getElementById('contactEmail').value;
+    const company = document.getElementById('contactCompany').value;
+    const phone = document.getElementById('contactPhone').value;
+    const service = document.getElementById('contactService').value;
+    const message = document.getElementById('contactMessage').value;
+
+    const fullMessage = 
+        `Olá, meu nome é *${name}*\n` +
+        `Email: ${email}\n` +
+        `Empresa: *${company}*\n` +
+        `Telefone: ${phone}\n` +
+        `Serviço de Interesse: ${service}\n` +
+        `Mensagem: ${message}`;
+
+    const phoneNumber = '5562999003483';
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
+
+    window.open(whatsappURL, '_blank');
 });
+
 
 // Fechar Menu Móvel ao Clicar no Link
 document.querySelectorAll('.nav-link').forEach(link => {
