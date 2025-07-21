@@ -124,13 +124,13 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const service = document.getElementById('contactService').value;
     const message = document.getElementById('contactMessage').value;
 
-    const fullMessage = 
-        `Olá, meu nome é *${name}*\n` +
-        `Email: ${email}\n` +
-        `Empresa: *${company}*\n` +
-        `Telefone: ${phone}\n` +
-        `Serviço de Interesse: ${service}\n` +
-        `Mensagem: ${message}`;
+   const fullMessage = 
+    `Olá, meu nome é *${name}* e represento a empresa *${company}*.\n` +
+    `Estou procurando por um serviço relacionado a ${service} e gostaria de conversar sobre um projeto que temos em mente.\n\n` +
+    `Segue abaixo mais detalhes sobre o que precisamos:\n${message}\n\n` +
+    `Meus contatos para retorno são:\n` +
+    `Email: ${email}\n` +
+    `Telefone: ${phone}`;
 
     const phoneNumber = '5562999003483';
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
